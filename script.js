@@ -113,7 +113,7 @@ const output = XLSX.utils.book_new();
                 );
 
                 // add some formatting (have to do it cell by cell :-/ )
-                _.range(0, columns.length - 1).forEach((col) => {
+                _.range(0, columns.length).forEach((col) => {
                     _.range(1, res.length + 1).forEach((row) => {
                         outputTab[
                             XLSX.utils.encode_cell({ c: col, r: row })
